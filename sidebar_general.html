@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+<style>
+
+body {
+  font-family: "Lato", sans-serif;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.sidebars {
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    
+}
+.sidenav0 {
+  height: 50%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 25%;
+  left: 0;
+  background-color: #fffcbb;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav0 a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav0 a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav0 .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.sidenav1 {
+  height: 34%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #fffcbb;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav1 a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav1 a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav1 .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.sidenav2 {
+  height: 64%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  bottom: 0;
+  right: 0;
+  background-color: #fffcbb;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 40px;
+}
+
+.sidenav2 a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav2 a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav2 .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.mostly-customized-scrollbar::-webkit-scrollbar {
+  width: 5px;
+  height: 8px;
+  background-color: #aaa; /* or add it to the track */
+}
+
+/* Add a thumb */
+.mostly-customized-scrollbar::-webkit-scrollbar-thumb {
+    background: #000; 
+}
+
+h3 {
+    padding-left:5px;
+}
+@media screen and (min-width: 1280px) , screen and (max-width: 1920px) {
+        #yourID{  overflow-x: auto; overflow-y: auto; }                     
+}
+/* 
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+} */
+</style>
+</head>
+<body>
+<div class="sidebar">
+        <div id="mySidenav0" class="sidenav0">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav0()">&times;</a>
+        <a href="#">About Birds</a>
+        <a href="#">Contact a Bird!</a>
+        <a href="#">Owl Clients</a>
+        <a href="#">Locate a Bird</a>
+        </div>
+    </div>
+<div class="sidebar">
+    <div id="mySidenav1" class="sidenav1">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">&times;</a>
+    <h3><img src="https://cdn3.iconfinder.com/data/icons/school-and-education-4/32/education_29-512.png" width="50"> Owl Fact</h3>
+    <h4 ><a href="" style="font-size: 15px;">Fun fact about owls: They can turn their heads 360 degrees! How awesome is that</a></h4>
+    </div>
+</div>
+<div class="sidebar">
+        <div id="mySidenav2" class="sidenav2">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">&times;</a>
+        <h3><img src="https://cdn4.iconfinder.com/data/icons/clipboards/32/file-document-clipboard-list-512.png" width="50" > Birdie Spotting</h3>
+        <p>Do you like birds?</p> 
+        <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                
+                <label class="form-check-label" for="defaultCheck1">
+                    yes
+                </label>
+                </div>
+                <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" disabled>
+                <label class="form-check-label" for="defaultCheck2">
+                    no
+                </label>
+                </div>
+        <div class="w3-container mostly-customized-scrollbar" style="height:60%;overflow:scroll;">
+                    
+            <table class="table">
+                    <thead>
+                        <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Category</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Date Spotted</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <th scope="row">1</th>
+                        <td>Water Bird</td>
+                        <td>Penguin</td>
+                        <td>26 July 2019</td>
+                        </tr>
+                        <tr>
+                        <th scope="row">2</th>
+                        <td>Air Bird</td>
+                        <td>Pigeon</td>
+                        <td>30 July 2019</td>
+                        </tr>
+                        <tr>
+                        <th scope="row">3</th>
+                        <td>Land Bird</td>
+                        <td>Emu</td>
+                        <td>31 July 2019</td>
+                        </tr>
+                    </tbody>
+                    </table>
+        </div>
+        <!-- <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a> -->
+        </div>
+    </div>
+<img src="https://static.thenounproject.com/png/26761-200.png" width="100" > 
+<span style="padding-bottom: 20px">
+    <button type="button" class="btn btn-default" style="font-size:30px;cursor:pointer; position: absolute; left: 0; top: 25%;  height: 50%; " onclick="openNav0()">
+        <h3 style="transform: rotate(270deg);"> Menu </h3>
+    </button>
+    <!-- <button type="button" class="btn btn-default" style="font-size:30px;cursor:pointer; position: absolute; right: 0; top: 0;  height: 5%;"><img src="http://www.sclance.com/pngs/chat-png/chat_png_247959.png" width="50" height="50"></button> -->
+    <button type="button" class="btn btn-default" style="font-size:30px;cursor:pointer; position: absolute; right: 0; top: 0;  height: 34%;" onclick="openNav1()"><img src="https://cdn3.iconfinder.com/data/icons/school-and-education-4/32/education_29-512.png" width="40" ></button>
+    <button type="button" class="btn btn-default" style="font-size:30px;cursor:pointer; position: absolute; right: 0; bottom: 0; height:64%;" onclick="openNav2()"><img src="https://cdn4.iconfinder.com/data/icons/clipboards/32/file-document-clipboard-list-512.png" width="40" ></button>
+</span>
+
+
+<script>
+function openNav0() {
+  document.getElementById("mySidenav0").style.width = "250px";
+}
+
+function closeNav0() {
+  document.getElementById("mySidenav0").style.width = "0";
+}
+function openNav1() {
+  document.getElementById("mySidenav1").style.width = "250px";
+}
+
+function closeNav1() {
+  document.getElementById("mySidenav1").style.width = "0";
+}
+function openNav2() {
+  document.getElementById("mySidenav2").style.width = "400px";
+}
+
+function closeNav2() {
+  document.getElementById("mySidenav2").style.width = "0";
+}
+</script>
+   
+</body>
+</html> 
